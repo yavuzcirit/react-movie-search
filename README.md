@@ -80,3 +80,10 @@ src/
 ## API Usage
 
 This application uses the [OMDb API](http://www.omdbapi.com/) to fetch movie data. The API key is included in the repository for demonstration purposes.
+
+## Example View 
+
+![Home Page View](/public/app-home-page.png)
+
+
+![Detail Page View](/public/app-detail-page.png)
