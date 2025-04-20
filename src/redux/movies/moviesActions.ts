@@ -1,4 +1,3 @@
-// src/redux/movies/moviesActions.ts
 import { Dispatch } from 'redux';
 
 import * as types from './moviesTypes';

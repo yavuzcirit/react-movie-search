@@ -1,4 +1,3 @@
-// src/api/omdbApi.ts
 import axios from 'axios';
 
 const API_KEY = 'b2620fd0';

@@ -1,9 +1,5 @@
-// src/styles/main.scss
-
-// Import variables
 @import 'variables';
 
-// Reset and base styles
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -34,7 +30,6 @@ a {
   padding: 0 $spacing-md;
 }
 
-// Layout
 .app-layout {
   display: flex;
   flex-direction: column;
@@ -79,11 +74,11 @@ a {
 @import 'components/pagination';
 @import 'components/movieCard';
 
-// Import page styles
+
 @import 'pages/homePage';
 @import 'pages/movieDetail';
 
-// Utility classes
+
 .loading-spinner {
   display: flex;
   justify-content: center;
