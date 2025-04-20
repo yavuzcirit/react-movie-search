@@ -30,7 +30,7 @@ A React TypeScript application that allows users to search and view movie inform
 
 1. Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/yavuzcirit/react-movie-search.git
 cd invent-movie-explorer
 ```
 
