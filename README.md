@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Invent.ai Movie Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React TypeScript application that allows users to search and view movie information using the OMDb API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for movies, TV series, or episodes
+- Filter search results by year and type
+- Pagination with 10 items per page
+- View detailed information about each movie/show
+- Responsive design
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 18
+- TypeScript
+- Redux with Redux Thunk for state management
+- React Router for navigation
+- SCSS for styling
+- Axios for API requests
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or later)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone 
+cd invent-movie-explorer
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+# or
+yarn start
+```
 
-### `npm run eject`
+The application will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Building for Production
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+# or
+yarn build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+src/
+  ├── api/                # API integration
+  ├── components/         # Reusable components
+  │   ├── common/         # Generic UI components
+  │   ├── layout/         # Layout components
+  │   └── movies/         # Movie-related components
+  ├── pages/              # Page components
+  ├── redux/              # Redux state management
+  │   └── movies/         # Movies domain
+  ├── styles/             # SCSS styles
+  │   ├── components/     # Component styles
+  │   └── pages/          # Page-specific styles
+  ├── types/              # TypeScript type definitions
+  └── utils/              # Helper functions
+```
 
-## Learn More
+## API Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This application uses the [OMDb API](http://www.omdbapi.com/) to fetch movie data. The API key is included in the repository for demonstration purposes.

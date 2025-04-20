@@ -1,0 +1,97 @@
+.movie-details {
+    padding: $spacing-lg 0;
+    
+    .movie-details-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-lg;
+      
+      .back-button {
+        margin-right: $spacing-md;
+      }
+      
+      .movie-title {
+        margin: 0;
+        font-size: 28px;
+        font-weight: $font-weight-bold;
+      }
+    }
+    
+    .movie-details-content {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: $spacing-xl;
+      margin-bottom: $spacing-xl;
+      
+      @media (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr;
+      }
+      
+      .movie-poster {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: $border-radius-md;
+          box-shadow: $box-shadow-medium;
+        }
+      }
+      
+      .movie-info {
+        .info-row {
+          display: flex;
+          margin-bottom: $spacing-md;
+          
+          .label {
+            min-width: 120px;
+            font-weight: $font-weight-medium;
+            color: $text-light;
+          }
+          
+          .value {
+            flex: 1;
+          }
+        }
+      }
+    }
+    
+    .plot-section, .ratings-section {
+      margin-bottom: $spacing-xl;
+      
+      h3 {
+        margin-bottom: $spacing-md;
+        font-weight: $font-weight-medium;
+      }
+    }
+    
+    .ratings-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-md;
+      
+      .rating-item {
+        background-color: $card-background;
+        padding: $spacing-md;
+        border-radius: $border-radius-sm;
+        box-shadow: $box-shadow-light;
+        
+        .rating-source {
+          font-weight: $font-weight-medium;
+          margin-right: $spacing-xs;
+        }
+      }
+    }
+    
+    .loading-spinner, .error-message {
+      text-align: center;
+      padding: $spacing-xl;
+    }
+    
+    .error-container {
+      text-align: center;
+      
+      .error-message {
+        margin-bottom: $spacing-lg;
+        color: $error-color;
+      }
+    }
+  }

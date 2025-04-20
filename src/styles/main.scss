@@ -1,0 +1,101 @@
+// src/styles/main.scss
+
+// Import variables
+@import 'variables';
+
+// Reset and base styles
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $primary-dark;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+// Layout
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: $primary-color;
+  color: white;
+  padding: $spacing-md 0;
+  box-shadow: $box-shadow-medium;
+  
+  .logo {
+    color: white;
+    text-decoration: none;
+    
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }
+}
+
+.app-main {
+  flex: 1;
+}
+
+.app-footer {
+  background-color: darken($background-color, 5%);
+  padding: $spacing-md 0;
+  margin-top: $spacing-xl;
+  text-align: center;
+  color: $text-light;
+  
+  p {
+    margin: 0;
+  }
+}
+
+@import 'components/button';
+@import 'components/input';
+@import 'components/pagination';
+@import 'components/movieCard';
+
+// Import page styles
+@import 'pages/homePage';
+@import 'pages/movieDetail';
+
+// Utility classes
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: $primary-color;
+  font-weight: $font-weight-medium;
+}
+
+.error-message {
+  padding: $spacing-lg;
+  color: $error-color;
+  text-align: center;
+  font-weight: $font-weight-medium;
+}
