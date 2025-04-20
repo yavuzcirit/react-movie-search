@@ -1,4 +1,4 @@
-# Invent.ai Movie Explorer
+# Movie Explorer
 
 A React TypeScript application that allows users to search and view movie information using the OMDb API.
 
